@@ -83,6 +83,10 @@ background: #BF2E2E;
     padding-bottom: 5rem;
     padding-top: 3rem;
     margin: 0 auto;
+}
+
+h1 {
+	text-shadow: 7px 4px 5px #C22D1F;
 	animation: bounce .6s alternate infinite ease-in;
 }
 
@@ -97,8 +101,6 @@ background: #BF2E2E;
 		transform: translateX(0%);
 	}
 }
-
-h1 {text-shadow: 7px 4px 5px #C22D1F}
 
 .padre__grid{
 	width: 100%;
