@@ -83,6 +83,19 @@ background: #BF2E2E;
     padding-bottom: 5rem;
     padding-top: 3rem;
     margin: 0 auto;
+	animation: bounce .6s alternate infinite ease-in;
+}
+
+@keyframes bounce {
+	0%{
+		transform: translateX(-30%);
+	}
+	50%{
+		transform: translateX(-15%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
 }
 
 h1 {text-shadow: 7px 4px 5px #C22D1F}
