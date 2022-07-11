@@ -65,6 +65,10 @@ background: #BF2E2E;
 /* FIN HEADER */
 /* INDEX.HTML */
 /* CUERPO PAGINA */
+.cuerpo {
+	background-image: linear-gradient(to top, #FFEBEB, #F53727);
+}
+
 .titulo2 {
 	background-image: url(./Imagenes/Equipo.jpeg);
 	background-size: cover;
