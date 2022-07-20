@@ -19,6 +19,48 @@ HEADER
     float: left;
 	padding: 15px 0 0 20px;
 }
+.site-name:hover {
+    animation: mover 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes mover {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
 	#logoHeader:hover {
 		color: #F53727;
 	}
@@ -87,20 +129,84 @@ background: #BF2E2E;
 
 h1 {
 	text-shadow: 7px 4px 5px #C22D1F;
-	animation: bounce .6s alternate infinite ease-in;
 }
+h1 {
+	color: hsla(0, 0%, 0%, .9);
+	font: normal 140px Varela Round, sans-serif;
+	height: 140px;
+	left: 0;
+	letter-spacing: 5px;
+	margin: -80px 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: 50%;
+	width: 100%;
+	animation: move linear 2000ms infinite;  
+  }
+  
+  @keyframes move {
+	0% {
+	  text-shadow:
+		4px -4px 0 hsla(0, 100%, 50%, 1), 
+		3px -3px 0 hsla(0, 100%, 50%, 1), 
+		2px -2px 0 hsla(0, 100%, 50%, 1), 
+		1px -1px 0 hsla(0, 100%, 50%, 1),
+		-4px 4px 0 rgb(243, 218, 218), 
+		-3px 3px 0 rgb(221, 231, 231), 
+		-2px 2px 0 rgb(250, 250, 250), 
+		-1px 1px 0 rgb(250, 248, 248)
+	  ;
+	}
+	25% {    
+	  text-shadow:      
+		-4px -4px 0 rgb(243, 218, 218),
+		-3px -3px 0 rgb(243, 218, 218), 
+		-2px -2px 0 rgb(243, 218, 218),
+		-1px -1px 0 rgb(243, 218, 218),
+		4px 4px 0 hsla(0, 100%, 50%, 1), 
+		3px 3px 0 hsla(0, 100%, 50%, 1), 
+		2px 2px 0 hsla(0, 100%, 50%, 1), 
+		1px 1px 0 hsla(0, 100%, 50%, 1)      
+	  ;
+	}
+	50% {
+	  text-shadow:
+		-4px 4px 0 hsla(0, 100%, 50%, 1), 
+		-3px 3px 0 hsla(0, 100%, 50%, 1), 
+		-2px 2px 0 hsla(0, 100%, 50%, 1), 
+		-1px 1px 0 hsla(0, 100%, 50%, 1),
+		4px -4px 0 rgb(243, 218, 218),
+		3px -3px 0 rgb(243, 218, 218),
+		2px -2px 0 rgb(243, 218, 218), 
+		1px -1px 0 rgb(243, 218, 218),
+	}
+	75% {
+	  text-shadow:
+		4px 4px 0 rgb(243, 218, 218),
+		3px 3px 0 rgb(243, 218, 218),
+		2px 2px 0 rgb(243, 218, 218),
+		1px 1px 0 rgb(243, 218, 218),
+		-4px -4px 0 hsla(0, 100%, 50%, 1), 
+		-3px -3px 0 hsla(0, 100%, 50%, 1), 
+		-2px -2px 0 hsla(0, 100%, 50%, 1), 
+		-1px -1px 0 hsla(0, 100%, 50%, 1)      
+	  ;
+	}
+	100% {
+	  text-shadow:
+		4px -4px 0 hsla(0, 100%, 50%, 1), 
+		3px -3px 0 hsla(0, 100%, 50%, 1), 
+		2px -2px 0 hsla(0, 100%, 50%, 1), 
+		1px -1px 0 hsla(0, 100%, 50%, 1),
+		-4px 4px 0 rgb(243, 218, 218),
+		-3px 3px 0 rgb(243, 218, 218),
+		-2px 2px 0 rgb(243, 218, 218), 
+		-1px 1px 0 rgb(243, 218, 218),
+	  ;
+	}  
+  }
 
-@keyframes bounce {
-	0%{
-		transform: translateX(-30%);
-	}
-	50%{
-		transform: translateX(-15%);
-	}
-	100%{
-		transform: translateX(0%);
-	}
-}
+
 
 .padre__grid{
 	width: 100%;
@@ -276,6 +382,7 @@ padding-top: 4rem;
 .imagenesTorneo { 
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #trofeo {
@@ -456,6 +563,7 @@ fieldset{
 	color:#FFEBEB;
 	margin-bottom: 25px;
 	font-size: small;
+	text-align: center;
 }
 .sobreNosotros p{
 	color: #FFEBEB;
@@ -660,6 +768,9 @@ line-height: 2em;
 	"resultado resultado";
 	grid-template-columns: repeat(2, 1fr);
 }
+.main__grid__intro {
+	justify-content: center;
+}
 
 .cubo--Equipo{
 	justify-items: center;
@@ -704,14 +815,22 @@ line-height: 2em;
 	padding-top: 2rem;
 	font-size: small;
 }
+#mainTorneos .sectionTorneos {
+	margin: 0;
+	width: 100%;
+}
+
 .sectionTorneos article{
 	line-height: 2em;
 	margin: 0.5rem;
 }
-
 .imagenesTorneo { 
 	justify-content: center;
 	align-items: center;
+}
+
+.imagenesTorneo img{
+	width: 100%;
 }
 
 /* Fin trofeo */
@@ -751,6 +870,7 @@ line-height: 2em;
 		margin:1rem;
 		line-height: 2em;
 		align-items: center;
+		text-align: center;
 	}
 	.sobreNosotros p{
 		line-height: 1em;
@@ -759,10 +879,13 @@ line-height: 2em;
 	}
 	.box {
 		margin-top: 1rem;
+		justify-content: center;
+		align-items: center;
+		display: inline-block;
 	}
 	.red-social{
 		display: flex;
-		flex-direction: column;
+		flex-direction: wrap;
 	}
 	.pie .grupo-1 .red-social img {
 		padding: 3px;
