@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #0a0a0a;
+  background: #f2f2f2;
+  font-size: 1em;
+  line-height: 1.5em;
+  width: 100%; }
+
+#logoHeader {
+  float: left;
+  padding: 15px 0 0 20px; }
+  #logoHeader .site-name {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.2em; }
+
+.site-name:hover {
+  animation: mover 0.5s;
+  animation-iteration-count: infinite; }
+
+@keyframes mover {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  90% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
+
+#logoHeader:hover {
+  color: #F53727; }
+
+#mainHeader {
+  background: #751B13;
+  color: #FFEBEB;
+  height: 80px; }
+  #mainHeader .logoHeader {
+    color: #FFEBEB; }
+  #mainHeader .home__flex {
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 28px;
+    padding-right: 20px; }
+    #mainHeader .home__flex a {
+      color: #FFEBEB;
+      display: block;
+      padding: 0 10px;
+      text-decoration: none; }
+      #mainHeader .home__flex a a :hover {
+        background-color: #BF2E2E; }
+
+.pie {
+  width: 100%;
+  background-color: #751B13;
+  position: absolute;
+  color: #FFEBEB; }
+  .pie .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "roja about media";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px;
+    grid-gap: 50px;
+    padding: 2rem;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
+    .pie .grupo-1 .box figure {
+      grid-area: roja;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie .grupo-1 .box figure p {
+        font-size: 30px; }
+    .pie .grupo-1 .red-social img {
+      grid-area: media;
+      color: #FFEBEB;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 45px;
+      margin-right: 10px; }
+
+.sobreNosotros {
+  grid-area: about;
+  color: #FFEBEB;
+  margin-bottom: 25px;
+  font-size: small;
+  text-align: center; }
+  .sobreNosotros p {
+    color: #FFEBEB;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.box h2 {
+  margin-bottom: 1rem; }
+
+.pie .grupo-2 {
+  justify-content: center;
+  display: flex;
+  background-color: #17181860;
+  padding: 15px 10px;
+  text-align: center;
+  color: #FFEBEB; }
+  .pie .grupo-2 small {
+    font-size: 15px; }
+
+.cuerpo {
+  background-image: linear-gradient(to top, #FFEBEB, #BF2E2E); }
+  .cuerpo .titulo2 {
+    background-image: url(../assests/Imagenes/Equipo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.2em;
+    width: 100%;
+    height: 800px;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    margin: 0 auto; }
+  .cuerpo h1 {
+    text-shadow: 7px 4px 5px #C22D1F;
+    color: rgba(0, 0, 0, 0.9);
+    font: normal 140px Varela Round, sans-serif;
+    height: 140px;
+    left: 0;
+    letter-spacing: 5px;
+    margin: -80px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    width: 100%;
+    animation: move linear 2000ms infinite; }
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 #f3dada, -3px 3px 0 #dde7e7, -2px 2px 0 #fafafa, -1px 1px 0 #faf8f8; }
+  25% {
+    text-shadow: -4px -4px 0 #f3dada, -3px -3px 0 #f3dada, -2px -2px 0 #f3dada, -1px -1px 0 #f3dada, 4px 4px 0 red, 3px 3px 0 red, 2px 2px 0 red, 1px 1px 0 red; }
+  50% {
+    text-shadow: -4px 4px 0 red, -3px 3px 0 red, -2px 2px 0 red, -1px 1px 0 red, 4px -4px 0 #f3dada, 3px -3px 0 #f3dada, 2px -2px 0 #f3dada, 1px -1px 0 #f3dada; }
+  75% {
+    text-shadow: 4px 4px 0 #f3dada, 3px 3px 0 #f3dada, 2px 2px 0 #f3dada, 1px 1px 0 #f3dada, -4px -4px 0 red, -3px -3px 0 red, -2px -2px 0 red, -1px -1px 0 red; }
+  100% {
+    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 #f3dada, -3px 3px 0 #f3dada, -2px 2px 0 #f3dada, -1px 1px 0 #f3dada; } }
+
+.padre__grid {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-areas: "resultado imagen imagen";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: center; }
+  .padre__grid .cubo--chico {
+    grid-area: resultado;
+    justify-content: center;
+    background-color: #b91c1c;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10%;
+    text-align: center; }
+    .padre__grid .cubo--chico .tabla--resultados {
+      margin: auto;
+      font-size: x-large;
+      color: #FFEBEB;
+      width: 90%;
+      line-height: 1.3em; }
+    .padre__grid .cubo--chico article a h2 {
+      color: black;
+      margin: 20px;
+      text-decoration: underline; }
+  .padre__grid .cubo {
+    grid-area: imagen;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b91c1c;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    border-radius: 5%;
+    display: flex;
+    padding: 30px;
+    gap: 15px; }
+    .padre__grid .cubo img {
+      height: 135px;
+      width: 135px;
+      padding: 10px; }
+    .padre__grid .cubo .cuboul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+    .padre__grid .cubo a h2 {
+      color: black;
+      text-decoration: underline; }
+
+@media screen and (max-width: 1250px) {
+  .padre__grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "resultado resultado" "imagen imagen";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center; }
+    .padre__grid .cubo--chico {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    .padre__grid .cubo {
+      margin: 2rem;
+      padding: 1rem; } }
+
+@media screen and (max-width: 768px) {
+  body main {
+    height: 100%; }
+  /* Header */
+  #mainHeader {
+    height: 8rem; }
+    #mainHeader .home__flex {
+      margin: 0 10% 0 0;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap; }
+      #mainHeader .home__flex a {
+        padding: 2px;
+        display: block; }
+  /* Index */
+  .titulo2 {
+    height: 10rem;
+    font-size: xx-large;
+    background: linear-gradient(#751B13, #FFEBEB); }
+  .padre__grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "resultado resultado" "imagen imagen";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20rem 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; }
+    .padre__grid .cubo--chico {
+      margin-top: 2rem;
+      width: 250px;
+      height: 250px;
+      font-size: x-small; }
+      .padre__grid .cubo--chico .tabla--resultados {
+        font-size: x-small; }
+    .padre__grid .cubo {
+      margin: 0.5rem;
+      padding: 1rem;
+      width: 250px;
+      height: 500px;
+      font-size: x-small; }
+      .padre__grid .cubo img {
+        padding: 0 0.5rem 0 0.5rem;
+        width: 5rem;
+        height: 5rem; }
+      .padre__grid .cubo .cuboul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; } }
+
+/* pie */
+.pie {
+  position: absolute;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: xx-small;
+  height: 200px; }
+  .pie .grupo-1 {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
+    .pie .grupo-1 .box figure {
+      font-size: x-small;
+      justify-content: right; }
+      .pie .grupo-1 .box figure p {
+        font-size: large; }
+  .pie .sobreNosotros {
+    font-size: xx-small;
+    margin: 1rem;
+    line-height: 2em;
+    align-items: center;
+    text-align: center; }
+    .pie .sobreNosotros p {
+      line-height: 1em;
+      margin: 0;
+      margin-top: 0.3rem; }
+  .pie .box {
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-block; }
+    .pie .box .red-social {
+      display: flex;
+      flex-direction: wrap; }
+      .pie .box .red-social img {
+        padding: 3px; }
+  .pie .grupo-2 {
+    justify-content: center;
+    padding: 10px; }
+    .pie .grupo-2 small {
+      font-size: xx-small; }
+
+/* Fin Index */

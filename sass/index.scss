@@ -1,0 +1,167 @@
+@import "./misc/normalize.scss";
+
+@import "./partial/header.scss";
+
+@import "./partial/footer.scss";
+
+
+
+.cuerpo {
+	background-image: linear-gradient(to top, #FFEBEB, #BF2E2E);
+.titulo2 {
+	background-image: url(../assests/Imagenes/Equipo.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.2em;
+    width: 100%;
+    height: 800px;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+h1 {
+	text-shadow: 7px 4px 5px #C22D1F;
+    color: hsla(0, 0%, 0%, .9);
+	font: normal 140px Varela Round, sans-serif;
+	height: 140px;
+	left: 0;
+	letter-spacing: 5px;
+	margin: -80px 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: 50%;
+	width: 100%;
+	animation: move linear 2000ms infinite;  
+}
+}
+    @keyframes move {
+	0% {
+	  text-shadow:
+		4px -4px 0 hsla(0, 100%, 50%, 1), 
+		3px -3px 0 hsla(0, 100%, 50%, 1), 
+		2px -2px 0 hsla(0, 100%, 50%, 1), 
+		1px -1px 0 hsla(0, 100%, 50%, 1),
+		-4px 4px 0 rgb(243, 218, 218), 
+		-3px 3px 0 rgb(221, 231, 231), 
+		-2px 2px 0 rgb(250, 250, 250), 
+		-1px 1px 0 rgb(250, 248, 248)
+	  ;
+	}
+	25% {    
+	  text-shadow:      
+		-4px -4px 0 rgb(243, 218, 218),
+		-3px -3px 0 rgb(243, 218, 218), 
+		-2px -2px 0 rgb(243, 218, 218),
+		-1px -1px 0 rgb(243, 218, 218),
+		4px 4px 0 hsla(0, 100%, 50%, 1), 
+		3px 3px 0 hsla(0, 100%, 50%, 1), 
+		2px 2px 0 hsla(0, 100%, 50%, 1), 
+		1px 1px 0 hsla(0, 100%, 50%, 1)      
+	  ;
+	}
+	50% {
+	  text-shadow:
+		-4px 4px 0 hsla(0, 100%, 50%, 1), 
+		-3px 3px 0 hsla(0, 100%, 50%, 1), 
+		-2px 2px 0 hsla(0, 100%, 50%, 1), 
+		-1px 1px 0 hsla(0, 100%, 50%, 1),
+		4px -4px 0 rgb(243, 218, 218),
+		3px -3px 0 rgb(243, 218, 218),
+		2px -2px 0 rgb(243, 218, 218), 
+		1px -1px 0 rgb(243, 218, 218),
+	}
+	75% {
+	  text-shadow:
+		4px 4px 0 rgb(243, 218, 218),
+		3px 3px 0 rgb(243, 218, 218),
+		2px 2px 0 rgb(243, 218, 218),
+		1px 1px 0 rgb(243, 218, 218),
+		-4px -4px 0 hsla(0, 100%, 50%, 1), 
+		-3px -3px 0 hsla(0, 100%, 50%, 1), 
+		-2px -2px 0 hsla(0, 100%, 50%, 1), 
+		-1px -1px 0 hsla(0, 100%, 50%, 1)      
+	  ;
+	}
+	100% {
+	  text-shadow:
+		4px -4px 0 hsla(0, 100%, 50%, 1), 
+		3px -3px 0 hsla(0, 100%, 50%, 1), 
+		2px -2px 0 hsla(0, 100%, 50%, 1), 
+		1px -1px 0 hsla(0, 100%, 50%, 1),
+		-4px 4px 0 rgb(243, 218, 218),
+		-3px 3px 0 rgb(243, 218, 218),
+		-2px 2px 0 rgb(243, 218, 218), 
+		-1px 1px 0 rgb(243, 218, 218),
+	  ;
+	}  
+  }
+
+.padre__grid{
+	width: 100%;
+	height: 500px;
+	display: grid;
+	grid-template-areas:
+	"resultado imagen imagen";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	justify-content: center;
+    .cubo--chico{
+        grid-area: resultado;
+        justify-content: center;
+        background-color:#b91c1c;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        border-radius: 10%;
+        text-align: center;
+    
+        .tabla--resultados{
+            margin: auto;
+            font-size: x-large;
+            color: #FFEBEB;
+            width: 90%;
+            line-height: 1.3em;
+        }
+        article a h2{
+            color: black;
+            margin: 20px;
+            text-decoration:underline;
+        }
+    }
+    .cubo{
+	grid-area: imagen;
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#b91c1c;
+	justify-content: center;
+	width: 800px;
+	height: 400px;
+	margin: auto;
+	border-radius: 5%;
+	display: flex;
+	padding: 30px;
+	gap: 15px;
+    img{
+        height: 135px;
+        width: 135px;
+        padding: 10px;
+    }
+    .cuboul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    a h2{
+        color: black;
+        text-decoration: underline;
+    }
+}
+}
+
+@import "./misc/mediaqueries.scss";

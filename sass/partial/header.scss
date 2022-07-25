@@ -1,0 +1,80 @@
+#logoHeader {
+    float: left;
+	padding: 15px 0 0 20px;
+	.site-name {
+		display: flex;
+        flex-direction: column;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+}
+.site-name:hover {
+    animation: mover 0.5s;
+    animation-iteration-count: infinite;
+@keyframes mover {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+}
+
+	#logoHeader:hover {
+		color: #F53727;
+}
+
+#mainHeader {
+	background: #751B13;
+	color: #FFEBEB;
+	height: 80px;
+    .logoHeader {
+    color: #FFEBEB;
+}
+    .home__flex {
+    display: flex;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 28px;
+    padding-right: 20px;
+    a {
+        color: #FFEBEB;
+        display: block;
+        padding: 0 10px;
+        text-decoration: none;
+        a :hover {
+            background-color:#BF2E2E ;
+        }
+        }
+}
+}

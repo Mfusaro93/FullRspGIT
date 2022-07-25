@@ -1,0 +1,67 @@
+.pie {
+	width: 100%;
+	background-color: #751B13;
+	position:absolute;
+	color: #FFEBEB;
+.grupo-1{
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-areas:
+	"roja about media";
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 150px;
+	grid-gap: 50px;
+	padding: 2rem;
+	font-family: 'Kdam Thmor Pro', sans-serif;
+    .box figure{
+        grid-area: roja;
+        width: 100%;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 30px;
+        }
+    }
+    .red-social img {
+        grid-area: media;
+        color: #FFEBEB;
+        display:inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 45px;
+        margin-right: 10px;
+    }
+}
+}
+
+.sobreNosotros{
+	grid-area: about;
+	color:#FFEBEB;
+	margin-bottom: 25px;
+	font-size: small;
+	text-align: center;
+    p{
+        color: #FFEBEB;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.box h2{
+	margin-bottom: 1rem;
+}
+
+.pie .grupo-2{
+	justify-content: center;
+	display: flex;
+    background-color: #17181860;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFEBEB;
+    small{
+        font-size: 15px;
+    }
+}

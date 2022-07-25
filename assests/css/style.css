@@ -24,7 +24,6 @@ HEADER
     animation-iteration-count: infinite;
 }
 
-
 @keyframes mover {
     0% {
         transform: translate(1px, 1px) rotate(0deg);
@@ -108,7 +107,7 @@ background: #BF2E2E;
 /* INDEX.HTML */
 /* CUERPO PAGINA */
 .cuerpo {
-	background-image: linear-gradient(to top, #FFEBEB, #F53727);
+	background-image: linear-gradient(to top, #FFEBEB, #BF2E2E);
 }
 
 .titulo2 {
