@@ -1,0 +1,52 @@
+/* TIENDA */
+#mainTienda {
+	font-size: 16px;
+    .sectionTiendaBanner {
+        height: 100%;
+        width: 100%;
+            background-image: url(../../assests/Imagenes/Milanfondo.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .sectionTienda {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: #751B13;
+            div{
+            text-align: center;
+            justify-content: center;
+            h2{
+                margin: 2.5rem ;
+                font-size: xx-large;
+            }
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                img {
+                    height: 31.25em;
+                }
+                .shopTienda{
+                    border: none;
+                input{
+                    margin: auto;
+                    color: #FFEBEB;
+                    display: flex;
+                    margin-top: 1rem;
+                    background-color: #751B13;
+                    }
+                }
+                }
+            }
+        }
+    }
+    #tiendaMedia {
+        margin-bottom: 5em;
+    }
+
+
+/* FIN TIENDA */

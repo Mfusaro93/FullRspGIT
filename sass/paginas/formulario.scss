@@ -1,0 +1,57 @@
+/* Registro */
+#mainRegistro{
+	font-size: 16px;
+.form-register {
+	width: 31.25em;
+	height: 37.5em;
+	background: #3c2424;
+	padding: 1.875em;
+	margin: 6.25em auto 6.25em auto;
+	border-radius: 0.25em;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 0.5em 1em 2.5em #000;
+    fieldset{
+        border: none;
+        h4 {
+            font-size: 1.4em;
+            margin-bottom: 1.25em;
+        }
+        .controls {
+            width: 100%;
+            background: #3c2424;
+            padding: 0.625em;
+            border-radius: 0.25em;
+            margin-bottom: 1em;
+            border: 0.065em solid #c51f1f;
+            font-family: 'calibri';
+            font-size: 1.125em;
+            color: white;
+        }
+        p {
+            height: 2.5em;
+            text-align: center;
+            font-size: 1em;
+            line-height: 2.5em;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+        .boton{
+            width: 100%;
+            background: #c51f1f;
+            border: none;
+            padding: 0.75em;
+            color: white;
+            margin: 1em 0;
+            font-size: 1em;
+        }
+    }
+}
+}
+/* Fin Registro */

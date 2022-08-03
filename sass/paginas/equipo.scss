@@ -1,0 +1,77 @@
+/* EQUIPO */
+
+.main__grid {
+	display: grid;
+	grid-template-areas:
+	"escudo escudo . ."
+	". titulo1 titulo1 ."
+	"imagen imagen imagen imagen"
+	". titulo2 titulo2 ."
+	". resultado resultado .";
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 380px 144px auto 144px 900px;
+	color: #751B13;
+.main__grid__intro {
+	display: flex;
+	color: #751B13;
+	grid-area: escudo;
+	justify-content: left;
+	align-items: center;
+    .escudoRoja{
+        height: 300px;
+        margin: 40px;
+    }
+}
+.main__grid__intro__equipo{
+    margin: 0px;
+    line-height: 25px;
+}   
+.main__grid__titulo {
+	margin-top: 60px;
+	font-size: xx-large;
+	text-align: center;
+	margin-bottom: 60px;
+	text-decoration: underline;
+}
+#titulo1 {
+    grid-area: titulo1;
+    }
+#titulo2 {
+    grid-area: titulo2;
+    }
+.main__grid__informacion{
+    justify-self: center;
+    grid-area: resultado;
+    line-height: 3em;
+    .cubo--Equipo{
+        color: #FFEBEB;
+        background-color:#6b7513;
+        width: auto;
+        height: auto;
+        .tabla--resultados2{
+            text-align: center;
+            border-radius: 10px;
+            font-size: xx-large;
+            margin: 0;
+            padding: 0;
+            color: #FFEBEB;
+            width: 100%;
+            line-height: 2em;
+        }
+    }
+    }
+.main__grid__plantel {
+	grid-area: imagen;
+	display:flex;
+    .main__grid__plantel__div{
+        grid-area: imagen;
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 50px;
+        place-content: center;
+    }
+}
+}
+
+
+/* Fin equipo */

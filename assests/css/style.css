@@ -687,6 +687,7 @@ line-height: 2em;
 @media screen and (max-width: 768px){
 	body main{
 		height: 100%;
+		font-size: 8px;
 		}
 		/* Header */
 		#mainHeader{

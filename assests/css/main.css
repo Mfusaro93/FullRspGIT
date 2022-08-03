@@ -73,67 +73,194 @@ body {
       #mainHeader .home__flex a a :hover {
         background-color: #BF2E2E; }
 
-.pie {
-  width: 100%;
-  background-color: #751B13;
-  position: absolute;
-  color: #FFEBEB; }
-  .pie .grupo-1 {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-areas: "roja about media";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 150px;
-    grid-gap: 50px;
-    padding: 2rem;
-    font-family: 'Kdam Thmor Pro', sans-serif; }
-    .pie .grupo-1 .box figure {
-      grid-area: roja;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .pie .grupo-1 .box figure p {
-        font-size: 30px; }
-    .pie .grupo-1 .red-social img {
-      grid-area: media;
+/* EQUIPO */
+.main__grid {
+  display: grid;
+  grid-template-areas: "escudo escudo . ." ". titulo1 titulo1 ." "imagen imagen imagen imagen" ". titulo2 titulo2 ." ". resultado resultado .";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 380px 144px auto 144px 900px;
+  color: #751B13; }
+  .main__grid .main__grid__intro {
+    display: flex;
+    color: #751B13;
+    grid-area: escudo;
+    justify-content: left;
+    align-items: center; }
+    .main__grid .main__grid__intro .escudoRoja {
+      height: 300px;
+      margin: 40px; }
+  .main__grid .main__grid__intro__equipo {
+    margin: 0px;
+    line-height: 25px; }
+  .main__grid .main__grid__titulo {
+    margin-top: 60px;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: underline; }
+  .main__grid #titulo1 {
+    grid-area: titulo1; }
+  .main__grid #titulo2 {
+    grid-area: titulo2; }
+  .main__grid .main__grid__informacion {
+    justify-self: center;
+    grid-area: resultado;
+    line-height: 3em; }
+    .main__grid .main__grid__informacion .cubo--Equipo {
       color: #FFEBEB;
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      line-height: 45px;
-      margin-right: 10px; }
+      background-color: #6b7513;
+      width: auto;
+      height: auto; }
+      .main__grid .main__grid__informacion .cubo--Equipo .tabla--resultados2 {
+        text-align: center;
+        border-radius: 10px;
+        font-size: xx-large;
+        margin: 0;
+        padding: 0;
+        color: #FFEBEB;
+        width: 100%;
+        line-height: 2em; }
+  .main__grid .main__grid__plantel {
+    grid-area: imagen;
+    display: flex; }
+    .main__grid .main__grid__plantel .main__grid__plantel__div {
+      grid-area: imagen;
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 50px;
+      place-content: center; }
 
-.sobreNosotros {
-  grid-area: about;
-  color: #FFEBEB;
-  margin-bottom: 25px;
-  font-size: small;
-  text-align: center; }
-  .sobreNosotros p {
-    color: #FFEBEB;
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
+/* Fin equipo */
+/* Registro */
+#mainRegistro {
+  font-size: 16px; }
+  #mainRegistro .form-register {
+    width: 31.25em;
+    height: 37.5em;
+    background: #3c2424;
+    padding: 1.875em;
+    margin: 6.25em auto 6.25em auto;
+    border-radius: 0.25em;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 0.5em 1em 2.5em #000; }
+    #mainRegistro .form-register fieldset {
+      border: none; }
+      #mainRegistro .form-register fieldset h4 {
+        font-size: 1.4em;
+        margin-bottom: 1.25em; }
+      #mainRegistro .form-register fieldset .controls {
+        width: 100%;
+        background: #3c2424;
+        padding: 0.625em;
+        border-radius: 0.25em;
+        margin-bottom: 1em;
+        border: 0.065em solid #c51f1f;
+        font-family: 'calibri';
+        font-size: 1.125em;
+        color: white; }
+      #mainRegistro .form-register fieldset p {
+        height: 2.5em;
+        text-align: center;
+        font-size: 1em;
+        line-height: 2.5em; }
+        #mainRegistro .form-register fieldset p a {
+          color: white;
+          text-decoration: none; }
+        #mainRegistro .form-register fieldset p a:hover {
+          color: white;
+          text-decoration: underline; }
+      #mainRegistro .form-register fieldset .boton {
+        width: 100%;
+        background: #c51f1f;
+        border: none;
+        padding: 0.75em;
+        color: white;
+        margin: 1em 0;
+        font-size: 1em; }
 
-.box h2 {
-  margin-bottom: 1rem; }
+/* Fin Registro */
+/* TIENDA */
+#mainTienda {
+  font-size: 16px; }
+  #mainTienda .sectionTiendaBanner {
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assests/Imagenes/Milanfondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #mainTienda .sectionTienda {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #751B13; }
+    #mainTienda .sectionTienda div {
+      text-align: center;
+      justify-content: center; }
+      #mainTienda .sectionTienda div h2 {
+        margin: 2.5rem;
+        font-size: xx-large; }
+      #mainTienda .sectionTienda div form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #mainTienda .sectionTienda div form img {
+          height: 31.25em; }
+        #mainTienda .sectionTienda div form .shopTienda {
+          border: none; }
+          #mainTienda .sectionTienda div form .shopTienda input {
+            margin: auto;
+            color: #FFEBEB;
+            display: flex;
+            margin-top: 1rem;
+            background-color: #751B13; }
 
-.pie .grupo-2 {
-  justify-content: center;
-  display: flex;
-  background-color: #17181860;
-  padding: 15px 10px;
-  text-align: center;
-  color: #FFEBEB; }
-  .pie .grupo-2 small {
-    font-size: 15px; }
+#tiendaMedia {
+  margin-bottom: 5em; }
+
+/* FIN TIENDA */
+/* TORNEOS */
+#mainTorneos {
+  color: #751B13; }
+  #mainTorneos .sectionTorneos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem; }
+    #mainTorneos .sectionTorneos .escudoRoja {
+      height: 300px;
+      margin: 40px; }
+    #mainTorneos .sectionTorneos .informacionEquipo {
+      padding-top: 4rem;
+      line-height: 1rem;
+      margin: 1rem; }
+      #mainTorneos .sectionTorneos .informacionEquipo ul {
+        list-style: none;
+        line-height: 2rem; }
+      #mainTorneos .sectionTorneos .informacionEquipo h3 {
+        margin: 1rem 0 1rem 0; }
+      #mainTorneos .sectionTorneos .informacionEquipo #trofeo {
+        height: 9.3rem;
+        margin: 0.5rem; }
+  #mainTorneos .sectionImagenestorneo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #mainTorneos .sectionImagenestorneo .imagenesTorneo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      #mainTorneos .sectionImagenestorneo .imagenesTorneo img {
+        width: 18.75rem;
+        padding: 10px; }
+      #mainTorneos .sectionImagenestorneo .imagenesTorneo #tituloTorneo {
+        margin: 1rem; }
 
 .cuerpo {
   background-image: linear-gradient(to top, #FFEBEB, #BF2E2E); }
   .cuerpo .titulo2 {
-    background-image: url(../assests/Imagenes/Equipo.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -142,7 +269,7 @@ body {
     font-size: 3em;
     line-height: 1.2em;
     width: 100%;
-    height: 800px;
+    height: 10rem;
     padding-bottom: 5rem;
     padding-top: 3rem;
     margin: 0 auto; }
@@ -226,6 +353,63 @@ body {
       color: black;
       text-decoration: underline; }
 
+.pie {
+  width: 100%;
+  background-color: #751B13;
+  position: absolute;
+  color: #FFEBEB; }
+  .pie .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "roja about media";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px;
+    grid-gap: 50px;
+    padding: 2rem;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
+    .pie .grupo-1 .box figure {
+      grid-area: roja;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie .grupo-1 .box figure p {
+        font-size: 30px; }
+    .pie .grupo-1 .red-social img {
+      grid-area: media;
+      color: #FFEBEB;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 45px;
+      margin-right: 10px; }
+
+.sobreNosotros {
+  grid-area: about;
+  color: #FFEBEB;
+  margin-bottom: 25px;
+  font-size: small;
+  text-align: center; }
+  .sobreNosotros p {
+    color: #FFEBEB;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.box h2 {
+  margin-bottom: 1rem; }
+
+.pie .grupo-2 {
+  justify-content: center;
+  display: flex;
+  background-color: #17181860;
+  padding: 15px 10px;
+  text-align: center;
+  color: #FFEBEB; }
+  .pie .grupo-2 small {
+    font-size: 15px; }
+
 @media screen and (max-width: 1250px) {
   .padre__grid {
     width: 100%;
@@ -242,9 +426,66 @@ body {
       margin: 2rem;
       padding: 1rem; } }
 
+/* Equipo */
+.main__grid {
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "escudo escudo" "titulo1 titulo1" "imagen imagen" "titulo2 titulo2" "resultado resultado";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto; }
+  .main__grid .main__grid__intro .escudoRoja {
+    height: 10rem;
+    margin: 2rem; }
+    .main__grid .main__grid__intro .escudoRoja .main__grid__intro__equipo {
+      font-size: small; }
+  .main__grid .main__grid__titulo {
+    font-size: x-large; }
+  .main__grid .main__grid__plantel__div {
+    font-size: small; }
+    .main__grid .main__grid__plantel__div .plantelJugador {
+      height: 200px; }
+  .main__grid .main__grid__informacion {
+    justify-content: center;
+    align-items: center; }
+    .main__grid .main__grid__informacion .cubo--Equipo {
+      width: 20rem;
+      height: auto; }
+      .main__grid .main__grid__informacion .cubo--Equipo .tabla--resultados2 {
+        align-items: center;
+        background-color: #751B13;
+        font-size: small;
+        padding: 0;
+        color: #FFEBEB;
+        line-height: 2rem; }
+
+/*  Fin equipo */
+/* Tienda */
+#mainTienda {
+  font-size: 10px; }
+  #mainTienda .sectionTiendaBanner {
+    height: 15rem;
+    background-size: 100%; }
+
+/* Fin Tienda */
+/* Torneo */
+.sectionTorneos .escudoRoja {
+  height: 10rem;
+  margin: 2rem; }
+
+.imagenesTorneo {
+  justify-content: center; }
+
+/* Fin Trofeo */
+/* Registro */
+#mainRegistro {
+  font-size: 14px; }
+
+/* Fin Registro */
 @media screen and (max-width: 768px) {
   body main {
-    height: 100%; }
+    height: 100%;
+    font-size: 12px; }
   /* Header */
   #mainHeader {
     height: 8rem; }
@@ -257,11 +498,11 @@ body {
         padding: 2px;
         display: block; }
   /* Index */
-  .titulo2 {
-    height: 10rem;
+  .cuerpo .titulo2 {
+    height: 5rem;
     font-size: xx-large;
     background: linear-gradient(#751B13, #FFEBEB); }
-  .padre__grid {
+  .cuerpo .padre__grid {
     width: 100%;
     height: 100%;
     display: grid;
@@ -271,72 +512,136 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center; }
-    .padre__grid .cubo--chico {
+    .cuerpo .padre__grid .cubo--chico {
       margin-top: 2rem;
       width: 250px;
       height: 250px;
       font-size: x-small; }
-      .padre__grid .cubo--chico .tabla--resultados {
+      .cuerpo .padre__grid .cubo--chico .tabla--resultados {
         font-size: x-small; }
-    .padre__grid .cubo {
+    .cuerpo .padre__grid .cubo {
       margin: 0.5rem;
       padding: 1rem;
       width: 250px;
       height: 500px;
       font-size: x-small; }
-      .padre__grid .cubo img {
-        padding: 0 0.5rem 0 0.5rem;
-        width: 5rem;
-        height: 5rem; }
-      .padre__grid .cubo .cuboul {
+      .cuerpo .padre__grid .cubo img {
+        padding: 0;
+        width: 100%;
+        height: 100%; }
+      .cuerpo .padre__grid .cubo .cuboul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center; } }
-
-/* pie */
-.pie {
-  position: absolute;
-  margin-top: 2rem;
-  width: 100%;
-  font-size: xx-small;
-  height: 200px; }
-  .pie .grupo-1 {
-    justify-content: center;
-    padding: 0;
+        align-items: center; }
+        .cuerpo .padre__grid .cubo .cuboul li {
+          padding: 0.08rem;
+          width: 50%; }
+  /* equipo */
+  #mainheader .main__grid {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "escudo escudo" "titulo1 titulo1" "imagen imagen" "titulo2 titulo2" "resultado resultado";
+    grid-template-columns: repeat(2, 1fr); }
+    #mainheader .main__grid .main__grid__intro {
+      justify-content: center; }
+    #mainheader .main__grid .main__grid__informacion {
+      justify-items: center;
+      grid-area: resultado;
+      line-height: 3em; }
+      #mainheader .main__grid .main__grid__informacion .cubo--Equipo {
+        justify-items: center;
+        margin: 0;
+        width: 70%; }
+        #mainheader .main__grid .main__grid__informacion .cubo--Equipo .tabla--resultados2 {
+          background-color: #751B13;
+          font-size: small;
+          margin: 0%;
+          padding: 0;
+          width: 100%;
+          color: #FFEBEB;
+          line-height: 2em; }
+  /* fin equipo */
+  /* Tienda */
+  #mainTienda {
+    font-size: 8px; }
+    #mainTienda .sectionTiendaBanner {
+      height: 15rem;
+      background-size: 100%; }
+    #mainTienda .sectionTienda h3 {
+      font-size: 16px; }
+  /* Fin Tienda */
+  /* Torneo */
+  #mainTorneos .sectionTorneos {
     margin: 0;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    font-family: 'Kdam Thmor Pro', sans-serif; }
-    .pie .grupo-1 .box figure {
-      font-size: x-small;
-      justify-content: right; }
-      .pie .grupo-1 .box figure p {
-        font-size: large; }
-  .pie .sobreNosotros {
+    width: 100%; }
+    #mainTorneos .sectionTorneos .torneoEscudoRoja {
+      width: 100vh;
+      justify-self: center; }
+      #mainTorneos .sectionTorneos .torneoEscudoRoja .escudoRoja {
+        position: center;
+        height: 15rem;
+        margin: 0; }
+    #mainTorneos .sectionTorneos article {
+      line-height: 2em;
+      margin: 0.5rem; }
+    #mainTorneos .sectionTorneos .informacionEquipo {
+      padding-top: 2rem;
+      font-size: small; }
+  .imagenesTorneo {
+    justify-content: center;
+    align-items: center; }
+    .imagenesTorneo img {
+      width: 100%; }
+  /* Fin trofeo */
+  /* Registro */
+  #mainRegistro {
+    font-size: 12px; }
+  /* Fin Registro */
+  /* pie */
+  .pie {
+    position: absolute;
+    margin-top: 2rem;
+    width: 100%;
     font-size: xx-small;
-    margin: 1rem;
-    line-height: 2em;
-    align-items: center;
-    text-align: center; }
-    .pie .sobreNosotros p {
-      line-height: 1em;
+    height: 200px; }
+    .pie .grupo-1 {
+      justify-content: center;
+      padding: 0;
       margin: 0;
-      margin-top: 0.3rem; }
-  .pie .box {
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-    display: inline-block; }
-    .pie .box .red-social {
-      display: flex;
-      flex-direction: wrap; }
-      .pie .box .red-social img {
-        padding: 3px; }
-  .pie .grupo-2 {
-    justify-content: center;
-    padding: 10px; }
-    .pie .grupo-2 small {
-      font-size: xx-small; }
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5px;
+      font-family: 'Kdam Thmor Pro', sans-serif; }
+      .pie .grupo-1 .box figure {
+        font-size: x-small;
+        justify-content: right; }
+        .pie .grupo-1 .box figure p {
+          font-size: large; }
+    .pie .sobreNosotros {
+      font-size: xx-small;
+      margin: 1rem;
+      line-height: 2em;
+      align-items: center;
+      text-align: center; }
+      .pie .sobreNosotros p {
+        line-height: 1em;
+        margin: 0;
+        margin-top: 0.3rem; }
+    .pie .box {
+      margin-top: 1rem;
+      justify-content: center;
+      align-items: center;
+      display: inline-block; }
+      .pie .box .red-social {
+        display: flex;
+        flex-direction: wrap; }
+        .pie .box .red-social img {
+          padding: 3px; }
+    .pie .grupo-2 {
+      justify-content: center;
+      padding: 10px; }
+      .pie .grupo-2 small {
+        font-size: xx-small; } }
 
 /* Fin Index */

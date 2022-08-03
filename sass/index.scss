@@ -1,15 +1,15 @@
 @import "./misc/normalize.scss";
 
 @import "./partial/header.scss";
-
-@import "./partial/footer.scss";
-
+@import "./paginas/equipo.scss";
+@import "./paginas/formulario.scss";
+@import "./paginas/tienda.scss";
+@import "./paginas/torneo.scss";
 
 
 .cuerpo {
 	background-image: linear-gradient(to top, #FFEBEB, #BF2E2E);
 .titulo2 {
-	background-image: url(../assests/Imagenes/Equipo.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -18,7 +18,7 @@
     font-size: 3em;
     line-height: 1.2em;
     width: 100%;
-    height: 800px;
+    height: 10rem;
     padding-bottom: 5rem;
     padding-top: 3rem;
     margin: 0 auto;
@@ -163,5 +163,5 @@ h1 {
     }
 }
 }
-
+@import "./partial/footer.scss";
 @import "./misc/mediaqueries.scss";

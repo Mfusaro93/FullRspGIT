@@ -1,0 +1,47 @@
+/* TORNEOS */
+#mainTorneos {
+	color: #751B13;
+    .sectionTorneos {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+        .escudoRoja{
+            height: 300px;
+            margin: 40px;
+        }
+        .informacionEquipo {
+            padding-top: 4rem;
+            line-height: 1rem;
+            margin: 1rem;
+            ul { 
+                list-style: none;
+                line-height: 2rem;
+            }
+            h3{
+                margin: 1rem 0 1rem 0;
+            }
+            #trofeo {
+                height: 9.3rem;
+                margin: 0.5rem;
+            }
+            }
+    }
+    .sectionImagenestorneo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .imagenesTorneo { 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+                width: 18.75rem;
+                padding:10px; 
+        }
+        #tituloTorneo{
+            margin: 1rem;
+            }
+    }
+}
+}
+// Fin de torneos
