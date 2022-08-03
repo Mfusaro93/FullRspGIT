@@ -5,23 +5,20 @@
 @import "./paginas/formulario.scss";
 @import "./paginas/tienda.scss";
 @import "./paginas/torneo.scss";
-
+@import "./partial/footer.scss";
 
 .cuerpo {
-	background-image: linear-gradient(to top, #FFEBEB, #BF2E2E);
+	background-image: linear-gradient(to bottom, #BF2E2E ,#FFEBEB);
+height: 820px;
 .titulo2 {
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
     text-align: center;
     font-size: 3em;
-    line-height: 1.2em;
+	line-height: 1.2em;
+    padding-bottom: 5rem;
     width: 100%;
     height: 10rem;
-    padding-bottom: 5rem;
     padding-top: 3rem;
-    margin: 0 auto;
+    margin:auto;
 }
 h1 {
 	text-shadow: 7px 4px 5px #C22D1F;
@@ -163,5 +160,5 @@ h1 {
     }
 }
 }
-@import "./partial/footer.scss";
+
 @import "./misc/mediaqueries.scss";
