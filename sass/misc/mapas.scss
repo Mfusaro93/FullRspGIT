@@ -1,0 +1,11 @@
+$titulos:(
+    h1:3rem,
+    h2:2rem,
+    h3:1rem,
+    h4:0.8rem,
+);
+
+$h1:map-get($titulos, h1 );
+$h2:map-get($titulos, h2 );
+$h3:map-get($titulos, h3 );
+$h4:map-get($titulos, h4 );

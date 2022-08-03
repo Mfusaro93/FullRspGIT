@@ -1,3 +1,4 @@
+/*Normalize*/
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,8 @@ body {
   line-height: 1.5em;
   width: 100%; }
 
+/*Fin normalize*/
+/*Header*/
 #logoHeader {
   float: left;
   padding: 15px 0 0 20px; }
@@ -73,6 +76,7 @@ body {
       #mainHeader .home__flex a a :hover {
         background-color: #BF2E2E; }
 
+/*Fin Header*/
 /* EQUIPO */
 .main__grid {
   display: grid;
@@ -108,13 +112,13 @@ body {
     line-height: 3em; }
     .main__grid .main__grid__informacion .cubo--Equipo {
       color: #FFEBEB;
-      background-color: #6b7513;
-      width: auto;
+      background-color: #751B13;
+      width: 40em;
       height: auto; }
       .main__grid .main__grid__informacion .cubo--Equipo .tabla--resultados2 {
         text-align: center;
         border-radius: 10px;
-        font-size: xx-large;
+        font-size: x-large;
         margin: 0;
         padding: 0;
         color: #FFEBEB;
@@ -146,8 +150,8 @@ body {
     box-shadow: 0.5em 1em 2.5em #000; }
     #mainRegistro .form-register fieldset {
       border: none; }
-      #mainRegistro .form-register fieldset h4 {
-        font-size: 1.4em;
+      #mainRegistro .form-register fieldset h2 {
+        font-size: 2rem;
         margin-bottom: 1.25em; }
       #mainRegistro .form-register fieldset .controls {
         width: 100%;
@@ -202,7 +206,7 @@ body {
       justify-content: center; }
       #mainTienda .sectionTienda div h2 {
         margin: 2.5rem;
-        font-size: xx-large; }
+        font-size: 2rem; }
       #mainTienda .sectionTienda div form {
         display: flex;
         flex-wrap: wrap;
@@ -217,9 +221,8 @@ body {
             display: flex;
             margin-top: 1rem;
             background-color: #751B13; }
-
-#tiendaMedia {
-  margin-bottom: 5em; }
+  #mainTienda #tiendaMedia {
+    margin-bottom: 5em; }
 
 /* FIN TIENDA */
 /* TORNEOS */
@@ -240,6 +243,7 @@ body {
         list-style: none;
         line-height: 2rem; }
       #mainTorneos .sectionTorneos .informacionEquipo h3 {
+        font-size: 1rem;
         margin: 1rem 0 1rem 0; }
       #mainTorneos .sectionTorneos .informacionEquipo #trofeo {
         height: 9.3rem;
@@ -258,6 +262,8 @@ body {
       #mainTorneos .sectionImagenestorneo .imagenesTorneo #tituloTorneo {
         margin: 1rem; }
 
+/*Fin de torneos*/
+/*Footer*/
 .pie {
   width: 100%;
   background-color: #751B13;
@@ -302,8 +308,9 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem; }
 
-.box h2 {
-  margin-bottom: 1rem; }
+.box h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem; }
 
 .pie .grupo-2 {
   justify-content: center;
@@ -315,12 +322,14 @@ body {
   .pie .grupo-2 small {
     font-size: 15px; }
 
+/*Fin Footer*/
+/*Index*/
 .cuerpo {
   background-image: linear-gradient(to bottom, #BF2E2E, #FFEBEB);
   height: 820px; }
   .cuerpo .titulo2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     line-height: 1.2em;
     padding-bottom: 5rem;
     width: 100%;
@@ -407,6 +416,8 @@ body {
       color: black;
       text-decoration: underline; }
 
+/*Index*/
+/*Media queries*/
 @media screen and (max-width: 1250px) {
   .padre__grid {
     width: 100%;
@@ -529,6 +540,7 @@ body {
         .cuerpo .padre__grid .cubo .cuboul li {
           padding: 0.08rem;
           width: 50%; }
+  /*Fin index*/
   /* equipo */
   #mainheader .main__grid {
     justify-items: center;
@@ -586,7 +598,7 @@ body {
     align-items: center; }
     .imagenesTorneo img {
       width: 100%; }
-  /* Fin trofeo */
+  /* Fin torneo */
   /* Registro */
   #mainRegistro {
     font-size: 12px; }
@@ -636,4 +648,5 @@ body {
       .pie .grupo-2 small {
         font-size: xx-small; } }
 
-/* Fin Index */
+/* Fin pie */
+/*Fin Media querie*/

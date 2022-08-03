@@ -1,4 +1,5 @@
 @import "./misc/normalize.scss";
+@import "./misc/mapas.scss";
 
 @import "./partial/header.scss";
 @import "./paginas/equipo.scss";
@@ -7,12 +8,14 @@
 @import "./paginas/torneo.scss";
 @import "./partial/footer.scss";
 
+/*Index*/
+
 .cuerpo {
 	background-image: linear-gradient(to bottom, #BF2E2E ,#FFEBEB);
 height: 820px;
 .titulo2 {
     text-align: center;
-    font-size: 3em;
+    font-size: $h1;
 	line-height: 1.2em;
     padding-bottom: 5rem;
     width: 100%;
@@ -160,5 +163,5 @@ h1 {
     }
 }
 }
-
+/*Index*/
 @import "./misc/mediaqueries.scss";
