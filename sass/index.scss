@@ -1,11 +1,7 @@
 @import "./misc/normalize.scss";
 @import "./misc/mapas.scss";
-
+@import "./misc/mixing.scss";
 @import "./partial/header.scss";
-@import "./paginas/equipo.scss";
-@import "./paginas/formulario.scss";
-@import "./paginas/tienda.scss";
-@import "./paginas/torneo.scss";
 @import "./partial/footer.scss";
 
 /*Index*/
@@ -110,15 +106,7 @@ h1 {
 	grid-template-rows: auto;
 	justify-content: center;
     .cubo--chico{
-        grid-area: resultado;
-        justify-content: center;
-        background-color:#b91c1c;
-        width: 400px;
-        height: 400px;
-        margin: auto;
-        border-radius: 10%;
-        text-align: center;
-    
+@include cubo--chico;    
         .tabla--resultados{
             margin: auto;
             font-size: x-large;
@@ -133,18 +121,7 @@ h1 {
         }
     }
     .cubo{
-	grid-area: imagen;
-	display: flex;
-	flex-wrap: wrap;
-	background-color:#b91c1c;
-	justify-content: center;
-	width: 800px;
-	height: 400px;
-	margin: auto;
-	border-radius: 5%;
-	display: flex;
-	padding: 30px;
-	gap: 15px;
+	@include cubo;
     img{
         height: 135px;
         width: 135px;
@@ -164,4 +141,9 @@ h1 {
 }
 }
 /*Index*/
+@import "./paginas/equipo.scss";
+@import "./paginas/formulario.scss";
+@import "./paginas/tienda.scss";
+@import "./paginas/torneo.scss";
+
 @import "./misc/mediaqueries.scss";

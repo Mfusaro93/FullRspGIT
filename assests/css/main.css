@@ -77,6 +77,160 @@ body {
         background-color: #BF2E2E; }
 
 /*Fin Header*/
+/*Footer*/
+.pie {
+  width: 100%;
+  background-color: #751B13;
+  position: absolute;
+  color: #FFEBEB; }
+  .pie .grupo-1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "roja about media";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px;
+    grid-gap: 50px;
+    padding: 2rem;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
+    .pie .grupo-1 .box figure {
+      grid-area: roja;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie .grupo-1 .box figure p {
+        font-size: 30px; }
+    .pie .grupo-1 .red-social img {
+      grid-area: media;
+      color: #FFEBEB;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 45px;
+      margin-right: 10px; }
+
+.sobreNosotros {
+  grid-area: about;
+  color: #FFEBEB;
+  margin-bottom: 25px;
+  font-size: small;
+  text-align: center; }
+  .sobreNosotros p {
+    color: #FFEBEB;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.box h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem; }
+
+.pie .grupo-2 {
+  justify-content: center;
+  display: flex;
+  background-color: #17181860;
+  padding: 15px 10px;
+  text-align: center;
+  color: #FFEBEB; }
+  .pie .grupo-2 small {
+    font-size: 15px; }
+
+/*Fin Footer*/
+/*Index*/
+.cuerpo {
+  background-image: linear-gradient(to bottom, #BF2E2E, #FFEBEB);
+  height: 820px; }
+  .cuerpo .titulo2 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2em;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 10rem;
+    padding-top: 3rem;
+    margin: auto; }
+  .cuerpo h1 {
+    text-shadow: 7px 4px 5px #C22D1F;
+    color: rgba(0, 0, 0, 0.9);
+    font: normal 140px Varela Round, sans-serif;
+    height: 140px;
+    left: 0;
+    letter-spacing: 5px;
+    margin: -80px 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    width: 100%;
+    animation: move linear 2000ms infinite; }
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 #f3dada, -3px 3px 0 #dde7e7, -2px 2px 0 #fafafa, -1px 1px 0 #faf8f8; }
+  25% {
+    text-shadow: -4px -4px 0 #f3dada, -3px -3px 0 #f3dada, -2px -2px 0 #f3dada, -1px -1px 0 #f3dada, 4px 4px 0 red, 3px 3px 0 red, 2px 2px 0 red, 1px 1px 0 red; }
+  50% {
+    text-shadow: -4px 4px 0 red, -3px 3px 0 red, -2px 2px 0 red, -1px 1px 0 red, 4px -4px 0 #f3dada, 3px -3px 0 #f3dada, 2px -2px 0 #f3dada, 1px -1px 0 #f3dada; }
+  75% {
+    text-shadow: 4px 4px 0 #f3dada, 3px 3px 0 #f3dada, 2px 2px 0 #f3dada, 1px 1px 0 #f3dada, -4px -4px 0 red, -3px -3px 0 red, -2px -2px 0 red, -1px -1px 0 red; }
+  100% {
+    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 #f3dada, -3px 3px 0 #f3dada, -2px 2px 0 #f3dada, -1px 1px 0 #f3dada; } }
+
+.padre__grid {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-areas: "resultado imagen imagen";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: center; }
+  .padre__grid .cubo--chico {
+    grid-area: resultado;
+    justify-content: center;
+    background-color: #b91c1c;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10%;
+    text-align: center; }
+    .padre__grid .cubo--chico .tabla--resultados {
+      margin: auto;
+      font-size: x-large;
+      color: #FFEBEB;
+      width: 90%;
+      line-height: 1.3em; }
+    .padre__grid .cubo--chico article a h2 {
+      color: black;
+      margin: 20px;
+      text-decoration: underline; }
+  .padre__grid .cubo {
+    grid-area: imagen;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b91c1c;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    border-radius: 5%;
+    display: flex;
+    padding: 30px;
+    gap: 15px; }
+    .padre__grid .cubo img {
+      height: 135px;
+      width: 135px;
+      padding: 10px; }
+    .padre__grid .cubo .cuboul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+    .padre__grid .cubo a h2 {
+      color: black;
+      text-decoration: underline; }
+
+/*Index*/
 /* EQUIPO */
 .main__grid {
   display: grid;
@@ -263,160 +417,6 @@ body {
         margin: 1rem; }
 
 /*Fin de torneos*/
-/*Footer*/
-.pie {
-  width: 100%;
-  background-color: #751B13;
-  position: absolute;
-  color: #FFEBEB; }
-  .pie .grupo-1 {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-areas: "roja about media";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 150px;
-    grid-gap: 50px;
-    padding: 2rem;
-    font-family: 'Kdam Thmor Pro', sans-serif; }
-    .pie .grupo-1 .box figure {
-      grid-area: roja;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .pie .grupo-1 .box figure p {
-        font-size: 30px; }
-    .pie .grupo-1 .red-social img {
-      grid-area: media;
-      color: #FFEBEB;
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      line-height: 45px;
-      margin-right: 10px; }
-
-.sobreNosotros {
-  grid-area: about;
-  color: #FFEBEB;
-  margin-bottom: 25px;
-  font-size: small;
-  text-align: center; }
-  .sobreNosotros p {
-    color: #FFEBEB;
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
-
-.box h3 {
-  margin-bottom: 1rem;
-  font-size: 1rem; }
-
-.pie .grupo-2 {
-  justify-content: center;
-  display: flex;
-  background-color: #17181860;
-  padding: 15px 10px;
-  text-align: center;
-  color: #FFEBEB; }
-  .pie .grupo-2 small {
-    font-size: 15px; }
-
-/*Fin Footer*/
-/*Index*/
-.cuerpo {
-  background-image: linear-gradient(to bottom, #BF2E2E, #FFEBEB);
-  height: 820px; }
-  .cuerpo .titulo2 {
-    text-align: center;
-    font-size: 3rem;
-    line-height: 1.2em;
-    padding-bottom: 5rem;
-    width: 100%;
-    height: 10rem;
-    padding-top: 3rem;
-    margin: auto; }
-  .cuerpo h1 {
-    text-shadow: 7px 4px 5px #C22D1F;
-    color: rgba(0, 0, 0, 0.9);
-    font: normal 140px Varela Round, sans-serif;
-    height: 140px;
-    left: 0;
-    letter-spacing: 5px;
-    margin: -80px 0 0 0;
-    text-align: center;
-    text-transform: uppercase;
-    top: 50%;
-    width: 100%;
-    animation: move linear 2000ms infinite; }
-
-@keyframes move {
-  0% {
-    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 #f3dada, -3px 3px 0 #dde7e7, -2px 2px 0 #fafafa, -1px 1px 0 #faf8f8; }
-  25% {
-    text-shadow: -4px -4px 0 #f3dada, -3px -3px 0 #f3dada, -2px -2px 0 #f3dada, -1px -1px 0 #f3dada, 4px 4px 0 red, 3px 3px 0 red, 2px 2px 0 red, 1px 1px 0 red; }
-  50% {
-    text-shadow: -4px 4px 0 red, -3px 3px 0 red, -2px 2px 0 red, -1px 1px 0 red, 4px -4px 0 #f3dada, 3px -3px 0 #f3dada, 2px -2px 0 #f3dada, 1px -1px 0 #f3dada; }
-  75% {
-    text-shadow: 4px 4px 0 #f3dada, 3px 3px 0 #f3dada, 2px 2px 0 #f3dada, 1px 1px 0 #f3dada, -4px -4px 0 red, -3px -3px 0 red, -2px -2px 0 red, -1px -1px 0 red; }
-  100% {
-    text-shadow: 4px -4px 0 red, 3px -3px 0 red, 2px -2px 0 red, 1px -1px 0 red, -4px 4px 0 #f3dada, -3px 3px 0 #f3dada, -2px 2px 0 #f3dada, -1px 1px 0 #f3dada; } }
-
-.padre__grid {
-  width: 100%;
-  height: 500px;
-  display: grid;
-  grid-template-areas: "resultado imagen imagen";
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  justify-content: center; }
-  .padre__grid .cubo--chico {
-    grid-area: resultado;
-    justify-content: center;
-    background-color: #b91c1c;
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    border-radius: 10%;
-    text-align: center; }
-    .padre__grid .cubo--chico .tabla--resultados {
-      margin: auto;
-      font-size: x-large;
-      color: #FFEBEB;
-      width: 90%;
-      line-height: 1.3em; }
-    .padre__grid .cubo--chico article a h2 {
-      color: black;
-      margin: 20px;
-      text-decoration: underline; }
-  .padre__grid .cubo {
-    grid-area: imagen;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #b91c1c;
-    justify-content: center;
-    width: 800px;
-    height: 400px;
-    margin: auto;
-    border-radius: 5%;
-    display: flex;
-    padding: 30px;
-    gap: 15px; }
-    .padre__grid .cubo img {
-      height: 135px;
-      width: 135px;
-      padding: 10px; }
-    .padre__grid .cubo .cuboul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center; }
-    .padre__grid .cubo a h2 {
-      color: black;
-      text-decoration: underline; }
-
-/*Index*/
 /*Media queries*/
 @media screen and (max-width: 1250px) {
   .padre__grid {
